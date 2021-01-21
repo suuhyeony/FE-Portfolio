@@ -1,2 +1,5 @@
-# paintjs
-Painting Board made with VanillaJS
+## Front-end web Components by JS
+
+- [ ] Image slider
+
+- [x] Painting board
