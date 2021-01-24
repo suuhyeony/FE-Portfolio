@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search&Filter</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Phone book</h1>
+            <div class="search-container">
+                <div class="input-container">
+                    <input type="text" id="name" placeholder="Search / Add name">
+                    <input type="text" id="number" placeholder="Search / Add number">
+                </div>
+                <div class="buttons">
+                    <span class="search-icon">
+                        <i class="material-icons" id="search">search</i>
+                    </span>
+                    <button class="button-add">Add</button>
+                    <button class="button-remove">Remove</button>
+                </div>
+            </div>
+        </div>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>name</th>
+                        <th>phone number</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Suhyeon</td>
+                        <td>1234-5678</td>
+                    </tr>
+                    <tr>
+                        <td>Juno</td>
+                        <td>8765-4321</td>
+                    </tr>
+                    <tr>
+                        <td>jugul</td>
+                        <td>1234-8765</td>
+                    </tr>
+                    <tr>
+                        <td>suryeon</td>
+                        <td>8736-5235</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

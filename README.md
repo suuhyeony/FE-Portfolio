@@ -1,5 +1,5 @@
 ## Front-end web Components by JS
 
-- [ ] Image slider
-
+- [x] Image slider
+- [ ] Table search & filter
 - [x] Painting board
