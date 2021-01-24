@@ -6,7 +6,6 @@
     <title>Search&Filter</title>
     <link rel="stylesheet" href="./style.css">
     <script src="./script.js" defer></script>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
     <div class="container">
@@ -14,15 +13,12 @@
             <h1>Phone book</h1>
             <div class="search-container">
                 <div class="input-container">
-                    <input type="text" id="name" placeholder="Search / Add name">
-                    <input type="text" id="number" placeholder="Search / Add number">
+                    <input type="text" id="name" placeholder="Search / Add name" onchange="storeName()" >
+                    <input type="text" id="number" placeholder="Search / Add number" onchange="storeNumber()" >
                 </div>
                 <div class="buttons">
-                    <span class="search-icon">
-                        <i class="material-icons" id="search">search</i>
-                    </span>
                     <button class="button-add">Add</button>
-                    <button class="button-remove">Remove</button>
+                    <button class="button-sort">Asc</button>
                 </div>
             </div>
         </div>

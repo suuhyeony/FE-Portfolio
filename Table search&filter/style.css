@@ -28,7 +28,7 @@ input {
     align-items: flex-end;
 }
 
-i, button {
+button {
     vertical-align: bottom;
     cursor: pointer;
     margin: 0 5px;
