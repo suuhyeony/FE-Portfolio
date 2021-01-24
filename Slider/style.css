@@ -1,0 +1,78 @@
+.container {
+    width: 45%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.carousel {
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.slider {
+    display: flex;
+    height: 100%;
+    width: 400%;
+}
+
+img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prev {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.next {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.arrow i {
+    font-size: 50px;
+    -webkit-user-select: none;
+    color: white;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin: 0;
+    padding: 0;
+    transform: translate(-50%);
+  }
+
+li {
+    width: 8px;
+    height: 8px;
+    background: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 50px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+li.selected {
+    background: transparent;
+}
+
+.check {
+    font-weight: 800;
+    margin-top: 10px;
+    position: absolute;
+    right: 30%;
+}
