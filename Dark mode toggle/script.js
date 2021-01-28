@@ -1,27 +1,29 @@
 const toggleBox = document.getElementById('chk');
+let userColor = localStorage.getItem('mode');
 
-const userColor = localStorage.getItem('mode');
-const isUserColor = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+const darkMode = () => {
+    document.body.classList.add('dark');
+    localStorage.setItem('mode', 'dark');
+}
 
-const getUserColor = () => (userColor ? userColor : isUserColor);
+const lightMode = () => {
+    document.body.classList.remove('dark');
+    localStorage.setItem('mode', 'light');
+}
 
-window.onload = function() {
-    if (getUserColor === 'dark') {
-        localStorage.setItem('mode', 'dark');
-        document.body.classList.add('dark');
-    } else {
-        localStorage.setItem('mode', 'light');
-        document.body.classList.remove('dark');
-    }
-};
+if (userColor === 'dark') {
+    darkMode();
+    toggleBox.checked = true;
+}
 
 toggleBox.addEventListener('click', () => {
-    if (toggleBox.checked) {
-        document.body.classList.add('dark');
-        localStorage.setItem('mode', 'dark');
+    userColor = localStorage.getItem('mode');
+    if (userColor === 'dark') {
+        lightMode();
+        toggleBox.checked = false;
     } else {
-        document.body.classList.remove('dark');
-        localStorage.setItem('mode', 'light');
+        darkMode();
+        toggleBox.checked = true;
     }
 
 });
