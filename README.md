@@ -4,4 +4,5 @@
 - [x] Table search & filter
 - [x] Painting board
 - [x] Dark mode toggle
-- [ ] Infinite scroll
+- [x] Infinite scroll
+- [ ] Form validation
